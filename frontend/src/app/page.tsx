@@ -38,7 +38,7 @@ export default function Home() {
           <div className="space-y-6 text-gray-700">
             <div className="bg-emerald-50 p-6 rounded-xl">
               <p className="text-2xl md:text-3xl font-bold text-emerald-800 mb-2">
-                20 de Setembro de 2025
+                04 de Outubro de 2025
               </p>
               <p className="text-xl md:text-2xl text-emerald-700">
                 🕘 às <span className="font-semibold">9:00</span> da manhã
