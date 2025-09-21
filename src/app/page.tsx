@@ -1,319 +1,218 @@
+import Layout from '@/components/Layout'
+import Link from 'next/link'
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700 min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-32 h-32 border border-emerald-300 rotate-45"></div>
-          <div className="absolute bottom-40 right-32 w-24 h-24 border border-emerald-300 rotate-12"></div>
-          <div className="absolute top-1/2 left-1/3 w-16 h-16 border border-emerald-300 rotate-45"></div>
-        </div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Logo/Símbolo Maçônico */}
-          <div className="mb-8 animate-fade-in-up">
-            <div className="w-40 h-40 mx-auto bg-gradient-to-br from-emerald-100 to-white rounded-full flex items-center justify-center mb-8 shadow-2xl border-4 border-emerald-200">
-              <span className="text-7xl text-emerald-800">⚖️</span>
-            </div>
-          </div>
-
-          {/* Título Principal */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-wide animate-fade-in-up animation-delay-200">
-            Loja Maçônica
-            <span className="block text-emerald-200">Eliphas Levi</span>
-          </h1>
-          
-          {/* Subtítulo com Valores */}
-          <p className="text-2xl md:text-3xl text-emerald-100 mb-8 font-light animate-fade-in-up animation-delay-400">
-            Liberdade · Igualdade · Fraternidade
-          </p>
-
-          {/* Descrição */}
-          <p className="text-lg md:text-xl text-emerald-200 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-600">
-            Uma instituição dedicada ao desenvolvimento moral, intelectual e espiritual, 
-            promovendo os valores universais de fraternidade e progresso humano.
-          </p>
-
-          {/* Card da Próxima Sessão */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 max-w-2xl mx-auto transform hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-800">
-            
-            {/* Ícone e Título da Sessão */}
+      <section className="relative overflow-hidden bg-gradient-to-r from-emerald-800 to-emerald-900 text-white">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+          <div className="text-center">
             <div className="mb-8">
-              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-full flex items-center justify-center mb-6 shadow-lg">
-                <span className="text-4xl">📅</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                Próxima Sessão
-              </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-emerald-600 to-emerald-400 mx-auto rounded"></div>
-            </div>
-            
-            {/* Informações da Data e Hora */}
-            <div className="space-y-6 text-gray-700">
-              <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 p-8 rounded-2xl">
-                <p className="text-3xl md:text-4xl font-bold text-emerald-800 mb-3">
-                  04 de Outubro de 2025
-                </p>
-                <p className="text-xl md:text-2xl text-emerald-700">
-                  🕘 às <span className="font-semibold">9:00</span> da manhã
-                </p>
-              </div>
-              
-              {/* Informações Adicionais */}
-              <div className="border-t border-gray-200 pt-6">
-                <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                  Para mais informações, entre em contato com a secretaria da loja.
-                </p>
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-emerald-600 rounded-full mb-6 shadow-lg">
+                <span className="text-3xl font-bold">EL</span>
               </div>
             </div>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-emerald-200 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-emerald-200 rounded-full mt-2"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sobre a Loja Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Sobre a Loja Maçônica Eliphas Levi
-            </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-emerald-600 to-emerald-400 mx-auto rounded mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Fundada nos princípios eternos da Maçonaria, nossa loja é um espaço de crescimento 
-              pessoal e fraternidade universal.
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
+              ARLS Eliphas Levi
+            </h1>
+            <p className="text-xl md:text-2xl text-emerald-100 mb-4 max-w-3xl mx-auto animate-fade-in-up animation-delay-200">
+              Augusta e Respeitável Loja Simbólica
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* História */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <span className="text-2xl">📚</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Nossa História</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Carregamos uma rica tradição de conhecimento e sabedoria, 
-                perpetuando os ensinamentos ancestrais da Arte Real.
-              </p>
-            </div>
-
-            {/* Missão */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Nossa Missão</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Formar homens de bem, promovendo o desenvolvimento moral e intelectual 
-                através do estudo e da prática dos valores maçônicos.
-              </p>
-            </div>
-
-            {/* Valores */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <span className="text-2xl">⭐</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Nossos Valores</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Guiados pelos princípios fundamentais de Liberdade, Igualdade e Fraternidade, 
-                buscamos a perfeição moral e espiritual.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Valores Fundamentais */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Os Três Pilares da Maçonaria
-            </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-emerald-600 to-emerald-400 mx-auto rounded"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* Liberdade */}
-            <div className="text-center group">
-              <div className="w-32 h-32 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center mb-8 mx-auto shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                <span className="text-5xl text-white">🕊️</span>
-              </div>
-              <h3 className="text-3xl font-bold text-emerald-800 mb-4">Liberdade</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                A liberdade de pensamento, consciência e expressão, 
-                respeitando sempre os direitos dos demais.
-              </p>
-            </div>
-
-            {/* Igualdade */}
-            <div className="text-center group">
-              <div className="w-32 h-32 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center mb-8 mx-auto shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                <span className="text-5xl text-white">⚖️</span>
-              </div>
-              <h3 className="text-3xl font-bold text-emerald-800 mb-4">Igualdade</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                Todos os homens são iguais em dignidade e direitos, 
-                independente de sua condição social ou origem.
-              </p>
-            </div>
-
-            {/* Fraternidade */}
-            <div className="text-center group">
-              <div className="w-32 h-32 bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-full flex items-center justify-center mb-8 mx-auto shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                <span className="text-5xl text-white">🤝</span>
-              </div>
-              <h3 className="text-3xl font-bold text-emerald-800 mb-4">Fraternidade</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                O amor fraternal que une todos os maçons, 
-                promovendo a harmonia e o bem comum.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contato Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 to-emerald-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Entre em Contato
-            </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-emerald-600 to-emerald-400 mx-auto rounded mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Interessado em conhecer mais sobre nossa loja? Entre em contato conosco.
+            <p className="text-lg text-emerald-200 mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-300">
+              Fundada em 22 de novembro de 1999 • "Conhece-te a Ti Mesmo"
             </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Nome Completo</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors duration-200"
-                    placeholder="Seu nome completo"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors duration-200"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Telefone</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors duration-200"
-                    placeholder="(11) 99999-9999"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Assunto</label>
-                  <select className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors duration-200">
-                    <option>Informações Gerais</option>
-                    <option>Iniciação</option>
-                    <option>Visitação</option>
-                    <option>Outros</option>
-                  </select>
-                </div>
-                <div className="md:col-span-2">
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Mensagem</label>
-                  <textarea 
-                    rows={6}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:outline-none transition-colors duration-200"
-                    placeholder="Sua mensagem..."
-                  ></textarea>
-                </div>
-                <div className="md:col-span-2 text-center">
-                  <button 
-                    type="submit"
-                    className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-12 py-4 rounded-xl font-semibold text-lg hover:from-emerald-700 hover:to-emerald-800 transform hover:scale-105 transition-all duration-200 shadow-lg"
-                  >
-                    Enviar Mensagem
-                  </button>
-                </div>
-              </form>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
+              <Link href="/quem-somos" className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg">
+                Conheça Nossa História
+              </Link>
+              <Link href="/estudos" className="border-2 border-emerald-300 text-emerald-100 hover:bg-emerald-700 hover:border-emerald-700 font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+                Nossos Estudos
+              </Link>
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-emerald-50 to-transparent"></div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gradient-to-br from-emerald-800 to-emerald-900 text-white py-16">
+      {/* Boas-vindas Section */}
+      <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-            {/* Logo e Descrição */}
-            <div className="md:col-span-2">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-white rounded-full flex items-center justify-center mr-4">
-                  <span className="text-2xl text-emerald-800">⚖️</span>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold">Loja Maçônica Eliphas Levi</h3>
-                  <p className="text-emerald-200">Liberdade, Igualdade e Fraternidade</p>
-                </div>
-              </div>
-              <p className="text-emerald-100 leading-relaxed mb-6">
-                Uma instituição dedicada aos valores eternos da Maçonaria, 
-                promovendo o desenvolvimento moral e intelectual de seus membros 
-                através dos ensinamentos da Arte Real.
-              </p>
-            </div>
-
-            {/* Links Rápidos */}
-            <div>
-              <h4 className="text-xl font-semibold mb-6">Links Rápidos</h4>
-              <ul className="space-y-3">
-                <li><a href="#inicio" className="text-emerald-200 hover:text-white transition-colors duration-200">Início</a></li>
-                <li><a href="#sobre" className="text-emerald-200 hover:text-white transition-colors duration-200">Sobre Nós</a></li>
-                <li><a href="#valores" className="text-emerald-200 hover:text-white transition-colors duration-200">Nossos Valores</a></li>
-                <li><a href="#contato" className="text-emerald-200 hover:text-white transition-colors duration-200">Contato</a></li>
-              </ul>
-            </div>
-
-            {/* Informações de Contato */}
-            <div>
-              <h4 className="text-xl font-semibold mb-6">Contato</h4>
-              <div className="space-y-3 text-emerald-100">
-                <p className="flex items-center">
-                  <span className="mr-2">📍</span>
-                  São Paulo - SP
-                </p>
-                <p className="flex items-center">
-                  <span className="mr-2">📧</span>
-                  contato@eliphaslevi.org.br
-                </p>
-                <p className="flex items-center">
-                  <span className="mr-2">📅</span>
-                  Reuniões: Quartas às 20h
-                </p>
-              </div>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Bem-vindos
+            </h2>
+            <div className="w-24 h-1 bg-emerald-600 mx-auto mb-8"></div>
           </div>
           
-          {/* Copyright */}
-          <div className="border-t border-emerald-700 pt-8 text-center">
-            <p className="text-emerald-200">
-              © {new Date().getFullYear()} Loja Maçônica Eliphas Levi. Todos os direitos reservados.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in-up">
+              <div className="prose prose-lg max-w-none">
+                <p className="text-gray-700 leading-relaxed">
+                  Sejam bem-vindos ao site da <strong>Augusta e Respeitável Loja Simbólica Eliphas Levi</strong>, 
+                  fundada em 22 de novembro de 1999, jurisdicionada ao Grande Oriente de São Paulo, 
+                  federada ao Grande Oriente do Brasil.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Nossa Loja dedica-se ao estudo dos ensinamentos maçônicos tradicionais, 
+                  da filosofia hermética e dos mistérios da antiguidade, sempre guiados pelo 
+                  princípio délfico <em>"Conhece-te a Ti Mesmo"</em>.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Aqui você encontrará textos, estudos e reflexões sobre a Maçonaria, 
+                  a Filosofia Rosacruz, e os ensinamentos esotéricos que iluminam 
+                  o caminho do autoconhecimento e da evolução espiritual.
+                </p>
+              </div>
+            </div>
+            
+            <div className="animate-fade-in-up animation-delay-300">
+              <div className="bg-emerald-50 rounded-lg p-8 shadow-lg border border-emerald-100">
+                <h3 className="text-2xl font-semibold text-emerald-800 mb-4">Nossa Filosofia</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                    <span className="text-gray-700">Liberdade de pensamento e consciência</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                    <span className="text-gray-700">Igualdade entre todos os seres humanos</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                    <span className="text-gray-700">Fraternidade universal</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                    <span className="text-gray-700">Busca constante pela verdade</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
-  );
+      </section>
+
+      {/* Seções de Destaque */}
+      <section className="py-16 lg:py-24 bg-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Explore Nossos Conteúdos
+            </h2>
+            <div className="w-24 h-1 bg-emerald-600 mx-auto mb-8"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card Estudos */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 animate-fade-in-up">
+              <div className="p-6">
+                <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl text-white">📚</span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Estudos Esotéricos</h3>
+                <p className="text-gray-600 mb-4">
+                  Interpretação simbólica, estudos bíblicos e filosofia hermética para o desenvolvimento espiritual.
+                </p>
+                <Link href="/estudos" className="text-emerald-600 hover:text-emerald-700 font-medium">
+                  Explore os estudos →
+                </Link>
+              </div>
+            </div>
+
+            {/* Card Filosofia Rosacruz */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 animate-fade-in-up animation-delay-200">
+              <div className="p-6">
+                <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl text-white">🌹</span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Filosofia Rosacruz</h3>
+                <p className="text-gray-600 mb-4">
+                  Os ensinamentos de Christian Rosenkreuz e a tradição esotérica do Ocidente.
+                </p>
+                <Link href="/filosofia-rosacruz" className="text-emerald-600 hover:text-emerald-700 font-medium">
+                  Conheça a filosofia →
+                </Link>
+              </div>
+            </div>
+
+            {/* Card Maçonaria */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 animate-fade-in-up animation-delay-400">
+              <div className="p-6">
+                <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl text-white">⚖️</span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">O que é Maçonaria</h3>
+                <p className="text-gray-600 mb-4">
+                  Compreenda os princípios filosóficos, filantrópicos e progressistas da Arte Real.
+                </p>
+                <Link href="/o-que-e-maconaria" className="text-emerald-600 hover:text-emerald-700 font-medium">
+                  Descubra mais →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Eliphas Levi Section */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Eliphas Levi
+            </h2>
+            <div className="w-24 h-1 bg-emerald-600 mx-auto mb-8"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in-up">
+              <div className="prose prose-lg max-w-none">
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <strong>Eliphas Levi Zahed</strong> é a tradução hebraica de Alphonse Louis Constant, 
+                  abade francês nascido em 8 de fevereiro de 1810 em Paris. Considerado o maior 
+                  ocultista do século XIX, era filho de um modesto sapateiro e dedicou sua vida 
+                  ao estudo das ciências herméticas.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Após seus estudos em Teologia e seu ingresso nas ordens religiosas, Eliphas 
+                  tornou-se um dos maiores estudiosos do ocultismo e esoterismo de seu tempo, 
+                  deixando um legado imenso através de suas obras sobre magia, cabala e filosofia hermética.
+                </p>
+                <Link href="/quem-somos" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium">
+                  Saiba mais sobre nossa história →
+                </Link>
+              </div>
+            </div>
+            
+            <div className="animate-fade-in-up animation-delay-300">
+              <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-lg p-8 text-white shadow-xl">
+                <h3 className="text-2xl font-semibold mb-6">Localização</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-emerald-200 text-xl">📍</span>
+                    <div>
+                      <p className="font-medium">Endereço:</p>
+                      <p className="text-emerald-100">
+                        Rua Guaimbé, 192<br />
+                        Mooca - São Paulo - SP
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-emerald-200 text-xl">📅</span>
+                    <div>
+                      <p className="font-medium">Fundada em:</p>
+                      <p className="text-emerald-100">22 de novembro de 1999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  )
 }
